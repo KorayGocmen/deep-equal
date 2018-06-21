@@ -7,7 +7,7 @@ var isDeepEqual = (param1, param2) => {
     if (param1.length !== param2.length) return false;
     for (var i = 0; i < param1.length; i++) {
       if (param1[i].constructor === Array || param1[i].constructor === Object) {
-        return isDeepEqual(param1[i], param2[i]);
+        if (!isDeepEqual(param1[i], param2[i])) return false;
       } else if (param1[i] !== param2[i]) return false;
     }
   } else if (param1.constructor === Object) {
@@ -18,7 +18,7 @@ var isDeepEqual = (param1, param2) => {
         param1[key].constructor === Array ||
         param1[key].constructor === Object
       ) {
-        return isDeepEqual(param1[key], param2[key]);
+        if (!isDeepEqual(param1[key], param2[key])) return false;
       } else if (param1[key] !== param2[key]) return false;
     }
   } else if (param1.constructor == String || param1.constructor == Number) {

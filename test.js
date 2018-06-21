@@ -35,6 +35,13 @@ describe("deep equal", function() {
       assert.equal(isDeepEqual(param1, param2), expectedResult);
     });
 
+    it("should return false when arrays have objects and are not equal in size", function() {
+      var param1 = [{ key: "val1" }, { key: "val" }];
+      var param2 = [{ key: "val1" }, { key: "val", key2: "something" }];
+      var expectedResult = false;
+      assert.equal(isDeepEqual(param1, param2), expectedResult);
+    });
+
     it("should return false when arrays are not equal in size", function() {
       var param1 = [1, 2, 3, 4, 5];
       var param2 = [1, 2, 3, 4];
