@@ -1,16 +1,20 @@
 {
   "name": "is-deep-eq",
   "description": "Check if two arrays, objects, numbers or strings are equal.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "Koray Gocmen",
-  "repository": "koraygocmen/deep-equal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KorayGocmen/deep-equal"
+  },
   "license": "MIT",
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "precommit": "pretty-quick --staged"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -23,6 +27,9 @@
   ],
   "devDependencies": {
     "assert": "1.4.1",
-    "mocha": "5.2.0"
+    "husky": "0.14.3",
+    "mocha": "5.2.0",
+    "prettier": "1.13.5",
+    "pretty-quick": "1.6.0"
   }
 }
