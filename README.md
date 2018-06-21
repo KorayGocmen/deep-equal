@@ -29,7 +29,7 @@ console.log(isDeepEqual({ key1: 1 }, { key1: "1" }));
 // => false
 
 console.log(isDeepEqual(1, 2));
-// => true
+// => false
 
 console.log(isDeepEqual([{ key1: "val" }], [{ key1: "val" }]));
 // => true
