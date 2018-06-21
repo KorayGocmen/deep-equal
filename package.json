@@ -1,7 +1,7 @@
 {
   "name": "is-deep-eq",
   "description": "Check if two arrays, objects, numbers or strings are equal.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Koray Gocmen",
   "repository": "koraygocmen/deep-equal",
   "license": "MIT",
