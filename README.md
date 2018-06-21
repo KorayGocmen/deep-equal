@@ -1,4 +1,4 @@
-# deep-equal
+# is-deep-eq
 ---
 > Check if two arrays, objects, numbers or strings are equal.
 
@@ -7,12 +7,12 @@
 ---
 Install with [npm](https://www.npmjs.com/):
 ```shell
-$ npm install --save deep-equal
+$ npm install --save is-deep-eq
 ```
 
 ### Usage
 ```javascript
-var isDeepEqual = require("deep-equal");
+var isDeepEqual = require("is-deep-eq");
 
 console.log(isDeepEqual([1, 2, 3], [1, 2, 3]));
 // => true

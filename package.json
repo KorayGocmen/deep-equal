@@ -1,5 +1,5 @@
 {
-  "name": "deep-equal",
+  "name": "is-deep-eq",
   "description": "Check if two arrays, objects, numbers or strings are equal.",
   "version": "1.0.0",
   "author": "Koray Gocmen",
