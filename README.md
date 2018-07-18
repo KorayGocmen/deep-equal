@@ -36,6 +36,12 @@ console.log(isDeepEqual([{ key1: "val" }], [{ key1: "val" }]));
 
 console.log(isDeepEqual({ key1: [1, 2, 3] }, { key1: [1, 2, 3] }));
 // => true
+
+console.log(isDeepEqual(undefined, undefined));
+// => true
+
+console.log(isDeepEqual(undefined, {}));
+// => false
 ```
 
 ### License

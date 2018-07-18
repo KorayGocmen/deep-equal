@@ -158,4 +158,34 @@ describe("deep equal", function() {
       assert.equal(isDeepEqual(param1, param2), expectedResult);
     });
   });
+
+  describe("testing undefined", () => {
+    it("should return true when params are both undefined", function() {
+      var param1;
+      var param2;
+      var expectedResult = true;
+      assert.equal(isDeepEqual(param1, param2), expectedResult);
+    });
+
+    it("should return true when params are both {}", function() {
+      var param1 = {};
+      var param2 = {};
+      var expectedResult = true;
+      assert.equal(isDeepEqual(param1, param2), expectedResult);
+    });
+
+    it("should return false when one param is undefined and other not", function() {
+      var param1 = 1;
+      var param2;
+      var expectedResult = false;
+      assert.equal(isDeepEqual(param1, param2), expectedResult);
+    });
+
+    it("should return false when one param is undefined and other empty", function() {
+      var param1 = {};
+      var param2;
+      var expectedResult = false;
+      assert.equal(isDeepEqual(param1, param2), expectedResult);
+    });
+  });
 });
