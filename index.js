@@ -1,8 +1,8 @@
 "use strict";
 
 var isDeepEqual = (param1, param2) => {
-  if (param1 == undefined && param2 == undefined) return true;
-  else if (param1 == undefined || param2 == undefined) return false;
+  if (param1 === undefined && param2 === undefined) return true;
+  else if (param1 === undefined || param2 === undefined) return false;
   else if (param1.constructor !== param2.constructor) return false;
 
   if (param1.constructor === Array) {
